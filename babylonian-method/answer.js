@@ -6,7 +6,7 @@ const squareRoot = radicand => {
   let fallbackBreak = 0;
   const results = [];
   while (
-    fallbackBreak <= 10 &&
+    fallbackBreak <= 100 &&
     getNumberTimesTwo(guessedSquareRoot) !== radicand
   ) {
     guessedSquareRoot = getGuessUntilFindSquareRoot(

@@ -7,15 +7,12 @@ test("should get 4 as the square root of 16", () => {
   expect(actual).toBe(expected);
 });
 
-// test("it calculates a decimal square root", assert => {
-//   const radicand = 423432.342423;
-//   const actual = squareRoot(radicand);
-//   const expected = 650.7167912563806;
-
-//   assert.equal(actual, expected, "should ");
-
-//   assert.end();
-// });
+test("it calculates a decimal square root", () => {
+  const radicand = 423432.342423;
+  const actual = squareRoot(radicand);
+  const expected = 650.7167912563806;
+  expect(actual).toBe(expected);
+});
 
 // test("it produces synonymous results with JS native Math.sqrt fn", assert => {
 //   const radicand = 423432.342423;
