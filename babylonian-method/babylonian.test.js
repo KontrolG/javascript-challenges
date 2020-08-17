@@ -14,15 +14,12 @@ test("it calculates a decimal square root", () => {
   expect(actual).toBe(expected);
 });
 
-// test("it produces synonymous results with JS native Math.sqrt fn", assert => {
-//   const radicand = 423432.342423;
-//   const actual = squareRoot(radicand);
-//   const expected = Math.sqrt(radicand);
-
-//   assert.equal(actual, expected, "should be the same result as Math.sqrt");
-
-//   assert.end();
-// });
+test("it produces synonymous results with JS native Math.sqrt fn", () => {
+  const radicand = 423432.342423;
+  const actual = squareRoot(radicand);
+  const expected = Math.sqrt(radicand);
+  expect(actual).toBe(expected);
+});
 
 // test("it calculates infinite fraction square roots", assert => {
 //   const radicand = 10;
