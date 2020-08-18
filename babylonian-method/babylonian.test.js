@@ -34,20 +34,14 @@ test("it returns NaN if a negative value is passed as the radicand", () => {
   expect(actual).toBe(NaN);
 });
 
-// test("it returns NaN if a non-number is passed as the radicand", assert => {
-//   const stringRadicand = "some string";
-//   const actual = squareRoot(stringRadicand);
+test("it returns NaN if a non-number is passed as the radicand", () => {
+  const stringRadicand = "some string";
+  const actual = squareRoot(stringRadicand);
+  expect(actual).toBe(NaN);
+});
 
-//   assert.ok(isNaN(actual), "should return NaN for non-number radicand");
-
-//   assert.end();
-// });
-
-// test("it returns NaN if NaN is passed as the radicand", assert => {
-//   const nanRadicand = NaN;
-//   const actual = squareRoot(nanRadicand);
-
-//   assert.ok(isNaN(actual), "should return NaN for NaN radicand");
-
-//   assert.end();
-// });
+test("it returns NaN if NaN is passed as the radicand", () => {
+  const nanRadicand = NaN;
+  const actual = squareRoot(nanRadicand);
+  expect(actual).toBe(NaN);
+});
