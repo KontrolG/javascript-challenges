@@ -28,14 +28,11 @@ test("it calculates infinite fraction square roots", () => {
   expect(actual).toBe(expected);
 });
 
-// test("it returns NaN if a negative value is passed as the radicand", assert => {
-//   const negativeRadicand = -10;
-//   const actual = squareRoot(negativeRadicand);
-
-//   assert.ok(isNaN(actual), "should return NaN for negative radicand");
-
-//   assert.end();
-// });
+test("it returns NaN if a negative value is passed as the radicand", () => {
+  const negativeRadicand = -10;
+  const actual = squareRoot(negativeRadicand);
+  expect(actual).toBe(NaN);
+});
 
 // test("it returns NaN if a non-number is passed as the radicand", assert => {
 //   const stringRadicand = "some string";

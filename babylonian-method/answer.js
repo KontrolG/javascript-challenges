@@ -1,5 +1,5 @@
 const squareRoot = radicand => {
-  // Step 1
+  if (radicand < 0) return NaN;
   const radicandHalf = radicand / 2;
   const randomNumberLessThanHalf = getGuessBetween(0, radicandHalf);
   let guessedSquareRoot = randomNumberLessThanHalf;
