@@ -21,19 +21,12 @@ test("it produces synonymous results with JS native Math.sqrt fn", () => {
   expect(actual).toBe(expected);
 });
 
-// test("it calculates infinite fraction square roots", assert => {
-//   const radicand = 10;
-//   const actual = squareRoot(radicand);
-//   const expected = 3.162277660168379;
-
-//   assert.equal(
-//     actual,
-//     expected,
-//     "should properly end infinite decimal square roots"
-//   );
-
-//   assert.end();
-// });
+test("it calculates infinite fraction square roots", () => {
+  const radicand = 10;
+  const actual = squareRoot(radicand);
+  const expected = 3.162277660168379;
+  expect(actual).toBe(expected);
+});
 
 // test("it returns NaN if a negative value is passed as the radicand", assert => {
 //   const negativeRadicand = -10;
